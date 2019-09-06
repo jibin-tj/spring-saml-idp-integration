@@ -13,6 +13,19 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+//    to get latest saml2config
+    maven {
+        url = uri("http://artifacts.alfresco.com/nexus/content/groups/public")
+    }
+//    maven {
+//        url = uri("https://repo.spring.io/milestone")
+//    }
+    maven{
+        url = uri("https://repo.spring.io/libs-snapshot")
+    }
+    maven {
+        url = uri("https://build.shibboleth.net/nexus/content/repositories/releases")
+    }
 }
 
 
@@ -20,6 +33,16 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
     compile 'org.springframework.boot:spring-boot-starter-web'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.7.RELEASE'
+
+    implementation("org.springframework.security.extensions:spring-security-saml2-core:1.0.9.RELEASE")
+    implementation 'org.springframework.security.extensions:spring-security-saml-dsl-core:1.0.5.RELEASE'
+//    compile group: 'org.springframework.security.extensions', name: 'spring-security-saml-dsl', version: '1.0.5.RELEASE'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.1.7.RELEASE'
+
 
 }
