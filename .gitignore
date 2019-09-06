@@ -2,8 +2,6 @@
 /.gradle/
 
 .gradle
-/build/
-/log/
 !gradle/wrapper/gradle-wrapper.jar
 /src/main/groovy/.gdsl
 
@@ -22,8 +20,6 @@
 *.iml
 *.ipr
 /out/
-.springBeans
-.sts4-cache
 
 ### NetBeans ###
 /nbproject/private/
