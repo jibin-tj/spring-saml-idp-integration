@@ -45,3 +45,4 @@ application-local.*
 # System Files
 .DS_Store
 Thumbs.db
+/.idea/
