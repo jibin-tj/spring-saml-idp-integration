@@ -2,7 +2,7 @@
 A skeleton application for integration of spring boot application leveraging SAML for SSO
 ## Set up a test okta
 
-#### Basic setup
+#### Basic setup with Okta IDP. 
 1. Navigate to [http://developer.okta.com/](http://developer.okta.com/)
 1. Click on *Sign Up*
 1. Fill in your own name and email address to register, or login if you already have 
@@ -46,4 +46,4 @@ A skeleton application for integration of spring boot application leveraging SAM
 ## Running the app
 
 1. `./gradlew clean bootRun`
-1. Navigate to `http://localhost:8443`
+1. Navigate to `http://localhost:9090`
